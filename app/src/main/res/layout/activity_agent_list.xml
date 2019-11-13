@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mLayoutTopView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageView
+            android:id="@+id/mImgBack"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_backarrow_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ABS_CUSTOM_VIEW.TextViewSemiBold
+            android:textColor="@color/abs_text_color_blacktuch"
+            android:textSize="25dp"
+            android:text="@string/mTextTitle_agent_list"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mLayoutSearchData"
+        android:layout_below="@+id/mLayoutTopView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ABS_CUSTOM_VIEW.EditTextRegular
+            android:id="@+id/mEditAgentSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorLightGrey"
+            android:inputType="textEmailAddress"
+            android:hint="@string/mHint_search_by_agent_name"
+            android:padding="8dp"
+            android:drawableEnd="@mipmap/ic_user"
+            android:textColor="@color/abs_text_color_blacktuch"
+            android:textColorHint="@color/abs_text_color_blacktuch" />
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/mListChat"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/mLayoutSearchData"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

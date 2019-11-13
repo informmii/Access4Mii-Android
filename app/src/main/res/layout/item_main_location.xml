@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout_item"
+    android:layout_width="119dp"
+    android:layout_height="50dp"
+    android:layout_margin="5dp"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="Car" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textSize="10dp"
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            tools:text="10" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/mCountButtonLayout"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_gravity="end"
+        android:background="@color/black"
+        android:layout_width="30dp"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:id="@+id/mAdd"
+            android:background="@color/colorRed"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/txtAdd"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="+" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mLess"
+            android:background="@color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/txtRemove"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                tools:text="-" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
